@@ -17,7 +17,7 @@ export default function ContactSection() {
                 <div className="flex flex-col gap-7 items-start contact-text-conatiner">
                     <h2
                         className="contact-title"
-                    >Ready to turn your ideas into exceptional websites or web applications? Contact us today, and let's make something amazing together!</h2>
+                    >Ready to turn your ideas into exceptional websites or web applications? Contact us today, and lets make something amazing together!</h2>
                     <Button 
                         
                         className="px-8 py-2 border border-solid rounded text-sm"
