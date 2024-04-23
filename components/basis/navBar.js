@@ -53,7 +53,7 @@ export default function NavBar() {
                             </a>
                         </Link>
                         <Button 
-                            const children = "Sign In"
+                            children = "Sign In"
                             className="px-8 py-1 border border-solid rounded text-sm"
                             style= {
                                 { 

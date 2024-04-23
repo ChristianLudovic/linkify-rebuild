@@ -26,7 +26,7 @@ export default function Hero(){
                         >Dive into the action with our streaming selection. All the matches. <br/>Just a click away</p>
                         <div className="flex gap-2 items-center">
                             <Button 
-                                const children = "Sign In"
+                                children = "Sign In"
                                 className="px-8 py-2 border border-solid rounded text-sm"
                                 style= {
                                     { 
@@ -36,7 +36,7 @@ export default function Hero(){
                                     }}  
                             />
                             <Button 
-                                const children = "Contact Us"
+                                children = "Contact Us"
                                 className="px-8 py-2 border border-solid rounded text-sm"
                                 style= {
                                     { 
