@@ -17,7 +17,7 @@ export default function Swipper() {
                 onClick={redirectToBuyMeAcoffee}
             >
                 <Badge 
-                    const children = "Version 2.1"
+                    
                     className="px-3 py-1 rounded-full border border-solid text-sm"
                     style= {
                         { 
@@ -25,7 +25,9 @@ export default function Swipper() {
                             color: "#85E0B7",
                             borderColor: "#15593B"
                         }}
-                />
+                >
+                    Version 2.1
+                </Badge>
                 <p className="text-white text-sm">Support the creator</p>
                 <div className="flex items-center justify-between">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">

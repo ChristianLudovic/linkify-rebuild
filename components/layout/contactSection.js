@@ -19,7 +19,7 @@ export default function ContactSection() {
                         className="contact-title"
                     >Ready to turn your ideas into exceptional websites or web applications? Contact us today, and let's make something amazing together!</h2>
                     <Button 
-                        children = "Let's Talk"
+                        
                         className="px-8 py-2 border border-solid rounded text-sm"
                         style= {
                             { 
@@ -27,7 +27,7 @@ export default function ContactSection() {
                                 color: "#fff",
                                 borderColor: "#3ECF8E"
                             }}  
-                    />
+                    >Lets Talk</Button>
                 </div>
             </div>
         </>

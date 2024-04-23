@@ -23,7 +23,7 @@ export default function Tabs( {onSelect} ){
                 }}
             >
                 <Badge 
-                    const children = "Premier League"
+                    
                     className="px-5 py-1 border border-solid rounded text-sm"
                     style={{
                         backgroundColor: selectedTab === "Premier League" ? "#343434" : "transparent",
@@ -33,9 +33,9 @@ export default function Tabs( {onSelect} ){
                         minWidth: "fit-content"
                     }}
                     onClick={() => handleTabClick("Premier League")}
-                />
+                >Premier League</Badge>
                 <Badge 
-                    const children = "Champions League"
+                    
                     className="px-5 py-1 border border-solid rounded text-sm"
                     style={{
                         backgroundColor: selectedTab === "Champions League" ? "#343434" : "transparent",
@@ -45,9 +45,9 @@ export default function Tabs( {onSelect} ){
                         minWidth: "fit-content"
                     }}    
                     onClick={() => handleTabClick("Champions League")}
-                />
+                >Champions League</Badge>
                 <Badge 
-                    const children = "La Liga"
+                    
                     className="px-5 py-1 border border-solid rounded text-sm"
                     style={{
                         backgroundColor: selectedTab === "La Liga" ? "#343434" : "transparent",
@@ -57,9 +57,9 @@ export default function Tabs( {onSelect} ){
                         minWidth: "fit-content"
                     }}
                     onClick={() => handleTabClick("La Liga")}
-                />
+                >La Liga</Badge>
                 <Badge 
-                    const children = "Ligue 1"
+                    
                     className="px-5 py-1 border border-solid rounded text-sm"
                     style={{
                         backgroundColor: selectedTab === "Ligue 1" ? "#343434" : "transparent",
@@ -69,9 +69,9 @@ export default function Tabs( {onSelect} ){
                         minWidth: "fit-content"
                     }}
                     onClick={() => handleTabClick("Ligue 1")}
-                />
+                >Ligue 1</Badge>
                 <Badge 
-                    const children = "Europa League"
+                    
                     className="px-5 py-1 border border-solid rounded text-sm"
                     style={{
                         backgroundColor: selectedTab === "Europa League" ? "#343434" : "transparent",
@@ -81,9 +81,9 @@ export default function Tabs( {onSelect} ){
                         minWidth: "fit-content"
                     }}
                     onClick={() => handleTabClick("Europa League")}
-                />
+                >Europa League</Badge>
                 <Badge 
-                    const children = "BundesLiga"
+                    
                     className="px-5 py-1 border border-solid rounded text-sm"
                     style={{
                         backgroundColor: selectedTab === "BundesLiga" ? "#343434" : "transparent",
@@ -93,9 +93,9 @@ export default function Tabs( {onSelect} ){
                         minWidth: "fit-content"
                     }}
                     onClick={() => handleTabClick("BundesLiga")}
-                />
+                >BundesLiga</Badge>
                 <Badge 
-                    const children = "Serie A"
+                    
                     className="px-5 py-1 border border-solid rounded text-sm"
                     style={{
                         backgroundColor: selectedTab === "Serie A" ? "#343434" : "transparent",
@@ -105,7 +105,7 @@ export default function Tabs( {onSelect} ){
                         minWidth: "fit-content"
                     }}
                     onClick={() => handleTabClick("Serie A")}
-                />
+                >Serie A</Badge>
             </div>
         </>
     );

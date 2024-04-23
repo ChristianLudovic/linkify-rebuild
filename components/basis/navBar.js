@@ -53,7 +53,7 @@ export default function NavBar() {
                             </a>
                         </Link>
                         <Button 
-                            children = "Sign In"
+                            
                             className="px-8 py-1 border border-solid rounded text-sm"
                             style= {
                                 { 
@@ -61,7 +61,9 @@ export default function NavBar() {
                                     color: "#fff",
                                     borderColor: "#3ECF8E"
                                 }}  
-                        />
+                        >
+                            Sign In
+                        </Button>
                         
                     </div>
                 </div>
