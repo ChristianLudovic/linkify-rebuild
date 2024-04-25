@@ -56,7 +56,7 @@ body{
     grid-template-columns: repeat(3, auto);
   }
 
-  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section{
+  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section, .announcement-wrapper{
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -68,7 +68,7 @@ body{
     grid-template-columns: repeat(3, auto);
   }
 
-  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section{
+  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section, .announcement-wrapper{
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -81,7 +81,7 @@ body{
     justify-content: center;
   }
 
-  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section{
+  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section, .announcement-wrapper{
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -104,7 +104,7 @@ body{
 
 @media screen and (max-width: 800px) {
   
-  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section{
+  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section, .announcement-wrapper{
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -149,7 +149,7 @@ body{
     column-gap: 20px;
   }
 
-  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section{
+  .mainSection-wrapper, .navBar-wrapper, .contactSection-wrapper, .hero-wrapper, .footer-section, .announcement-wrapper{
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -176,6 +176,12 @@ body{
   .hero-wrapper{
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .announcement-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   

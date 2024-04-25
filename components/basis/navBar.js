@@ -21,19 +21,19 @@ export default function NavBar() {
                                 <a style={{
                                     textDecoration: "none",
                                     color: "#EDEDED"
-                                }}>Product</a>
+                                }}>FootBall</a>
                             </Link>
                             <Link legacyBehavior href="/">
                                 <a style={{
                                     textDecoration: "none",
                                     color: "#EDEDED"
-                                }}>About us</a>
+                                }}>NBA PLAYOFFs</a>
                             </Link>
                             <Link legacyBehavior href="/">
                                 <a style={{
                                     textDecoration: "none",
                                     color: "#EDEDED"
-                                }}>Favorite List</a>
+                                }}>NFL</a>
                             </Link>
                         </div>
                     </div>
