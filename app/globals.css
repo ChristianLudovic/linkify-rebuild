@@ -178,11 +178,7 @@ body{
     padding-bottom: 60px;
   }
 
-  .announcement-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  
 
   
 }

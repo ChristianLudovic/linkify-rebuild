@@ -21,7 +21,7 @@ export default function Announcement(){
                         style={{
                             color: "#707070"
                         }}
-                    >Nba playoff links are now aivalable on linkify !!!</p>
+                    >Nba playoff links are aivalable</p>
                 </div>
                 
                 <Link legacyBehavior href="/">
