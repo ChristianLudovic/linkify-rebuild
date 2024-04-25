@@ -56,6 +56,18 @@ export default function MainSection() {
                         </div>
                     </div>
                 )}
+                {!isLoading && hasPosts && !hasFilteredPosts && (
+                    <div>
+                        <div>
+                            <div className="flex flex-col gap-6 items-center">
+                                <Image src={errorIllustration} alt="error illustration" />
+                                <h2 style={{ color: "#EDEDED", fontSize: "16px", fontWeight: "400", textAlign: "center" }}>
+                                    No games available for {selectedTab}!
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                )}
                 {!isLoading && hasFilteredPosts && (
                     <div className="card-container">
                         {filteredPosts.map((post, index) => (

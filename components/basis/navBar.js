@@ -9,7 +9,6 @@ export default function NavBar() {
                 className="px-36 py-5 navBar-wrapper"
                 style={{
                     borderBottom: "1px solid #2E2E2E"
-
                 }}
             >
                 <div className="flex justify-between items-center">
@@ -60,7 +59,8 @@ export default function NavBar() {
                                     backgroundColor: "#37996B", 
                                     color: "#fff",
                                     borderColor: "#3ECF8E"
-                                }}  
+                                }
+                            }  
                         >
                             Sign In
                         </Button>
