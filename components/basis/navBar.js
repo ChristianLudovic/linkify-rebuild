@@ -39,7 +39,7 @@ export default function NavBar() {
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="https://github.com/ChristianLudovic">
                             <a className="flex gap-1 items-center" style={{
                                 textDecoration: "none",
                                 color: "#EDEDED"
