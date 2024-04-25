@@ -1,50 +1,65 @@
 import Card from "../basis/card";
 import Tabs from "../basis/tabs";
 import { useEffect, useState } from "react";
-import { Skeleton } from "@/components/ui/skeleton"
 import { SkeletonCard } from "../basis/skeletonCard";
 import Image from "next/image";
 import errorIllustration from "../../app/assets/errorIllustration.svg";
 
 export default function MainSection() {
-
-    const [posts, setPosts] = useState([])
-
+    const [posts, setPosts] = useState([]);
     const [selectedTab, setSelectedTab] = useState("Premier League");
-
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const res = await fetch("/api/post");
-            const data = await res.json();
-            setPosts(data);
-        }
+            try {
+                const res = await fetch("/api/post");
+                const data = await res.json();
+                setPosts(data);
+            } catch (error) {
+                console.error("Error fetching posts:", error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
         setTimeout(() => {
             fetchPosts();
-        }, 3000)
-    }, [])
+        }, 3000);
+    }, []);
 
     const handleTabSelect = (championship) => {
         setSelectedTab(championship);
-    }
+    };
 
     const filteredPosts = posts.filter((post) => post.championship === selectedTab);
 
-    const isLoading = filteredPosts.length === 0 && posts.length === 0;
+    const hasPosts = posts.length > 0;
+    const hasFilteredPosts = filteredPosts.length > 0;
 
     return (
         <>
-            <div className="flex flex-col gap-16 px-36 mainSection-wrapper" >
+            <div className="flex flex-col gap-16 px-36 mainSection-wrapper">
                 <div className="flex justify-center">
-                    <Tabs  onSelect={handleTabSelect}/>
+                    <Tabs onSelect={handleTabSelect} />
                 </div>
-                {!isLoading && posts.length > 0 &&
-                    <div 
-                        
-                        className="card-container"
-                    >
+                {isLoading && <SkeletonCard />}
+                {!isLoading && !hasPosts && (
+                    <div>
+                        <div>
+                            <div className="flex flex-col gap-6 items-center">
+                                <Image src={errorIllustration} alt="error illustration" />
+                                <h2 style={{ color: "#EDEDED", fontSize: "16px", fontWeight: "400", textAlign: "center" }}>
+                                    No {selectedTab} games are available yet!
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                )}
+                {!isLoading && hasFilteredPosts && (
+                    <div className="card-container">
                         {filteredPosts.map((post, index) => (
-                            <Card 
+                            <Card
                                 key={index}
                                 homeTeam={post.homeTeamName}
                                 awayTeam={post.AwayTeamName}
@@ -57,28 +72,8 @@ export default function MainSection() {
                             />
                         ))}
                     </div>
-                }
-                {!isLoading && filteredPosts.length === 0 && 
-                    <div>
-                        <div>
-                            <div className="flex flex-col gap-6 items-center">
-                                <Image src={errorIllustration} alt="error illustration" />
-                                <h2 
-                                    style={{
-                                        color: "#EDEDED",
-                                        fontSize: "16px",
-                                        fontWeight: "400",
-                                        textAlign: "center"
-                                    
-                                    }}
-                                >Not {selectedTab} game are available yet!</h2>
-
-                            </div>
-                        </div>
-                    </div>
-                }
-                {isLoading && <SkeletonCard/>}
+                )}
             </div>
         </>
-    )
+    );
 }
