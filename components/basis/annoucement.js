@@ -24,7 +24,7 @@ export default function Announcement(){
                     >Nba playoff links are aivalable</p>
                 </div>
                 
-                <Link legacyBehavior href="/">
+                <Link legacyBehavior href="/nba">
                     <a
                         style={{
                             color: "#37996B",

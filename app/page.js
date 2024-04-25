@@ -11,8 +11,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <Announcement />
+      
       <NavBar />
+      <Announcement />
       <Hero />
       <MainSection />
       <ContactSection />

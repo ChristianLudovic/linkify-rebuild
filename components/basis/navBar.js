@@ -21,7 +21,7 @@ export default function NavBar() {
                                 <a style={{
                                     textDecoration: "none",
                                     color: "#EDEDED"
-                                }}>FootBall</a>
+                                }}>FOOTBALL</a>
                             </Link>
                             <Link legacyBehavior href="/">
                                 <a style={{

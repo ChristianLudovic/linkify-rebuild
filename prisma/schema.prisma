@@ -24,3 +24,14 @@ model Post {
   Hour          String
   linkUrl       String
 } 
+
+model NbaPost {
+  id  Int @id @default(autoincrement())
+  homeTeamName  String
+  AwayTeamName  String
+  homeLogoPath  String
+  AwayLogoPath  String
+  Date          String
+  Hour          String
+  linkUrl       String
+}
