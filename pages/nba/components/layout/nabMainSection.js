@@ -42,7 +42,7 @@ export default function NbaMainSection() {
                             <div className="flex flex-col gap-6 items-center">
                                 <Image src={errorIllustration} alt="error illustration" />
                                 <h2 style={{ color: "#EDEDED", fontSize: "16px", fontWeight: "400", textAlign: "center" }}>
-                                    No {selectedTab} games are available yet!
+                                    No NBA Playoff games are available yet!
                                 </h2>
                             </div>
                         </div>
